@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title>
+
+    <style>
+        /* CSS: Styling the page and the container */
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #my-dynamic-div {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        /* Styling the paragraph that JS will add */
+        .welcome-text {
+            font-size: 1.8rem;
+            color: #2d3436;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+    <head\>
+
+<body>
+
+    <div id="my-dynamic-div"></div>
+
+    <script>
+        // JS: Adding the paragraph into the empty div
+        const targetDiv = document.getElementById('my-dynamic-div');
+
+        // We add the HTML string including a class for the styling
+        targetDiv.innerHTML = '<p class="welcome-text">"Hello! This is my First Project using Js."</p>';
+    </script>
+
+</body>
+
+</html>
